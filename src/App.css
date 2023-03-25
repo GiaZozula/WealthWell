@@ -8,9 +8,9 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 /* Colors variable start*/
 :root {
-  --card: #C0C8F0;
-  --contrast: #97DAE8;
-  --highlight: #DBF0EF;
+  --card: #CCD5AE;
+  --contrast: #D4A373;
+  --highlight: #FAEDCD;
   --text: black;
   --outline: #aaa;
 }
@@ -37,15 +37,18 @@ ul, li {
   align-items: center;
 }
 
+body > #root > div {
+  height: 100vh;
+}
+
 body {
-  background: radial-gradient(circle, var(--contrast) 10%, white 100%);
-  animation: 4s ease-in 0s infinite alternate background;
+  background: radial-gradient(circle, var(--contrast) 0%, var(--highlight) 100%);
 }
 
 body, button {
   background-size: cover;
   font-size: 1.6rem;
-  font-family: 'Maitree', serif;
+  font-family: 'Nunito Sans Black', sans-serif;
   color:var(--text);
   padding: 0;
   margin:0;
@@ -150,6 +153,24 @@ label {
   border-radius: 10px;
 }
 
+/* Landing Page Styling */
+
+.landingPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.landingWrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.landingPage nav ul {
+  display: flex;
+  justify-content: space-around;
+}
 
 /* General Styling End */
 

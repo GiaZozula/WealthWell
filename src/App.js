@@ -10,6 +10,7 @@ import SpendingInterface from "./SpendingInterface";
 import SpendingForm from "./SpendingForm";
 import SpendingDisplay from "./SpendingDisplay";
 import Balance from "./Balance";
+import Landing from "./Landing";
 
 function App() {
     // userID will be stored in this state
@@ -85,7 +86,7 @@ function App() {
     return (
         <div className="wrapper">
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Landing />} />
                 <Route path="/signup" element={<SignUp userID={userID} setUserID={setUserID} dbSignUp={dbSignUp} signUpData={signUpData} setSignUpData={setSignUpData} />} />
                 <Route
                     path="/login"
@@ -116,7 +117,7 @@ function App() {
                     }
                 />
             </Routes>
-            <footer>&copy; Gia, Heather, Yan and Jakob at Juno College 2022 ♥</footer>
+            <footer></footer>
         </div>
     );
 }
