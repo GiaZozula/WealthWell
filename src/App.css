@@ -161,16 +161,75 @@ label {
   background-color: white;
 }
 
+.landingPage h1, h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.landingPage h1 {
+  font-size: 2.5rem;
+}
+
+.landingPage h2 {
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+
+.landingPage p {
+  font-family: Nunito Sans Regular, sans-serif;
+}
+
 .landingWrapper {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.landingPage nav ul {
+nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.left-nav {
+  margin-right: auto;
+}
+
+.navJoinLogin ul {
+  display: flex;
+}
+
+.navJoinLogin ul li {
+padding-right: 10px;
+}
+
+.right-nav {
+  margin-left: auto;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+/* Landing Page Hero */
+
+.hero {
+  display: flex;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* General Styling End */
 
