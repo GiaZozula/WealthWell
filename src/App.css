@@ -88,7 +88,7 @@ label {
 
 /* Button styling start*/
 
-.rectangleButton, .dayButton {
+.rectangleButton, .dayButton, .landNavButton {
   background-color: var(--highlight);
   border-radius: 4px;
   transition: background-color 0.1s;
@@ -106,11 +106,19 @@ label {
   padding: 20px;
 }
 
-.rectangleButton:hover, .rectangleButton:focus, .dayButton:hover, .dayButton:focus {
+.landNavButton {
+  padding: 10px;
+}
+
+nav .navJoinLogin .right-nav li a {
+  font-weight: bold;
+}
+
+.rectangleButton:hover, .rectangleButton:focus, .dayButton:hover, .dayButton:focus, .landNavButton:focus .landNavButton:hover {
   background-color: var(--contrast);
 }
 
-.rectangleButton:active, .dayButton:active {
+.rectangleButton:active, .dayButton:active, .landNavButton:active {
   background-color: var(--highlight);
   color: var(--outline);
 }
@@ -153,11 +161,13 @@ label {
   border-radius: 10px;
 }
 
+/* General Styling End */
+
 /* Landing Page Styling */
 
 .landingPage {
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  border-radius: 15px;
   background-color: white;
 }
 
@@ -171,6 +181,11 @@ label {
 
 .landingPage h2 {
   font-size: 6rem;
+  text-transform: capitalize;
+}
+
+.landingPage h3 {
+  font-size: 3rem;
   text-transform: capitalize;
 }
 
@@ -199,10 +214,6 @@ nav {
   align-items: center;
 }
 
-.left-nav {
-  margin-right: auto;
-}
-
 .navJoinLogin ul {
   display: flex;
 }
@@ -219,9 +230,14 @@ padding-right: 10px;
   margin: 0 10px;
 }
 
-/* Landing Page Hero */
+.subHeading, .content-middle, .content-bottom {
+  width: 80%;
+  padding-bottom: 20px;
+}
 
-.hero {
+/* Landing Page Hero & Content */
+
+.hero, .content-middle {
   display: flex;
 }
 
@@ -230,9 +246,57 @@ padding-right: 10px;
   flex-direction: column;
 }
 
+.hero img {
+  max-width: 80%;
+}
 
-/* General Styling End */
+.content-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 5%;
+}
 
+.middle-right {
+  width: 30%;
+}
+
+.middle-right img, .bottom-left img {
+  width: 60px;
+}
+
+
+.middle-left {
+  width: 60%;
+}
+
+.middle-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.bottom-right img {
+  align-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.content-bottom {
+  padding-top: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-right {
+  width: 40%;
+}
+
+.bottom-left {
+  width: 40%;
+}
 
 /* Welcome Container */
 .welcomeContainer {
@@ -371,11 +435,11 @@ margin-bottom: 48px;
   font-size: 1.3em;
 }
 
+
 footer {
-  position: absolute;
-  color: white;
-  top: 95vh;
-  text-shadow:1px 0 .5px var(--text), 1px .5px .5px var(--text),0px 0 0 var(--text), 0 0px 0 var(--text);
+  color: var(--outline);
+  display: flex; 
+  justify-content: center;
 }
 
 /* Aniamtions */
