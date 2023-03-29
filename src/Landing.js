@@ -18,10 +18,10 @@ const Landing = () => {
                         <div className="navJoinLogin">
                             <ul className="right-nav">
                                 <Link to="/signup">
-                            <li><button className="dayButton"><a href="#">Join Us</a></button></li>
+                            <li><button className="dayButton">Join Us</button></li>
                             </Link>
                             <Link to="/login">
-                            <li><button className="dayButton"><a href="#">Login</a></button></li>
+                            <li><button className="dayButton">Login</button></li>
                             </Link>
                             </ul>
                         </div>

@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import SignUp from "./SignUpForm";
 import LoginForm from "./LoginForm";
-import Home from "./Home";
 import SpendingInterface from "./SpendingInterface";
 import SpendingForm from "./SpendingForm";
 import SpendingDisplay from "./SpendingDisplay";
