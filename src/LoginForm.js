@@ -1,6 +1,7 @@
 import { get, ref, getDatabase } from "firebase/database";
 import firebase from "./firebase";
 import { Navigate } from "react-router-dom";
+import SplashLogo from "./SplashLogo";
 
 // Component responsible for receiving the userID to retrieve the user's profile information
 const LoginForm = ({ setUserID, setSignUpData, userID, setUserBalance, dbBalance, setUserLogin, userLogin }) => {
@@ -38,7 +39,7 @@ const LoginForm = ({ setUserID, setSignUpData, userID, setUserBalance, dbBalance
 		});
 	};
 
-	// onSubmit of the form, this will run two other functions
+	// on Submit of the form, this will run two other functions
 	const loginOnSubmit = (e) => {
 		e.preventDefault();
 		getUserSignUpData();
@@ -49,6 +50,7 @@ const LoginForm = ({ setUserID, setSignUpData, userID, setUserBalance, dbBalance
 		<>
 			<section className="welcomeContainer shadowStatic">
 				<h2>Log In</h2>
+				<SplashLogo />
 				<p className="message">Paste your profile ID below:</p>
 				<form onSubmit={loginOnSubmit}>
 					<input type="text" placeholder="Login with your ID" onChange={loginOnChange} maxLength="20" minLength={20} onKeyDown={(evt) => evt.key === '.' && evt.preventDefault()} />

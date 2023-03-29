@@ -29,7 +29,7 @@ const Landing = () => {
                     <div className="hero">
                         <div className="hero-left">  
                             <h2>Spend smarter,<br></br>save better.</h2>
-                            <p className="subHeading">Invest in your financial wellness with WealthWell, a budgeting app that helps you create a healthy money mindset.</p>
+                            <p className="subHeading">Invest in your financial wellness with WealthWell, a budgeting app that makes monetary health a breeze.</p>
                             <Link className="rectangleButton shadow" to="/signup">
                                 <h4>Join Us Today!</h4>
                             </Link>

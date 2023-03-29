@@ -176,7 +176,7 @@ nav .navJoinLogin .right-nav li a {
 }
 
 .landingPage h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 .landingPage h2 {
@@ -191,6 +191,7 @@ nav .navJoinLogin .right-nav li a {
 
 .landingPage p {
   font-family: Nunito Sans Regular, sans-serif;
+  line-height: 2.5rem;
 }
 
 .landingWrapper {
@@ -200,9 +201,9 @@ nav .navJoinLogin .right-nav li a {
 }
 
 nav {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 70px;
 }
 
@@ -230,24 +231,36 @@ padding-right: 10px;
   margin: 0 10px;
 }
 
-.subHeading, .content-middle, .content-bottom {
-  width: 80%;
+.subHeading {
+  width: 65%;
   padding-bottom: 20px;
 }
 
 /* Landing Page Hero & Content */
 
+.logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
 .hero, .content-middle {
   display: flex;
+  padding-top: 5%;
 }
 
 .hero-left {
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+.hero-right {
+  width: 50%;
 }
 
 .hero img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .content-middle {
@@ -308,29 +321,28 @@ padding-right: 10px;
 
 }
 
-.welcomeContainer .rectangleButton {
+/* .welcomeContainer .rectangleButton {
   margin-bottom: 24px
-}
+} */
 
-.welcomeContainer .imgContainer {
+/* .welcomeContainer .imgContainer {
 margin-bottom: 48px;
-}
+} */
 
 .welcomeContainer img {
   height: 200px;
   width: 200px;
   object-fit: cover; 
-  border: var(--highlight) 10px solid; 
   border-radius: 50%;
 }
 
 .welcomeContainer h2 {
   font-size: 3.2rem;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
 }
 .welcomeContainer .message {
   text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   line-height: 32px;
   cursor: pointer;
 }
