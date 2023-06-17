@@ -517,6 +517,55 @@ footer {
 /* MOBILE */
 @media (max-width: 550px) {
 
+  p {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    height: 75px;
+  }
+
+  .landingPage h1 {
+    font-size: 5rem;
+    margin-top: 5%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .right-nav {
+    justify-content: space-around;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 35%;
+  }
+
+  .hero-right img, .hero-left, .hero-right, .middle-right, .middle-left, .bottom-right, .bottom-left  {
+    width: 100%;
+  }
+
+  .hero-left h2 {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  .content-middle h3, .content-bottom h3 {
+    font-size: 2.25rem;
+  }
+
+  .subHeading {
+    width: 100%;
+  }
+
+  .content-middle, .content-bottom {
+    flex-direction: column;
+  }
+
   .welcomeContainer {
     width: 90%;
     padding: 64px 24px;
